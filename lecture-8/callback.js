@@ -37,26 +37,52 @@
 // ImageProcessing();//ASYNC Function
 // ReadFile();
 // getData();
-ImageProcessing();
-
-function ImageProcessing() {
-    readFile("240*240",function (res) {
-        console.log("Processing Ended");
-        console.log(res);
-
-
-    });
-
-
-    console.log("Processing started");
-
+// ImageProcessing();
+//
+// function ImageProcessing() {
+//     readFile("240*240",function (res) {
+//         console.log("Processing Ended");
+//         console.log(res);
+//
+//
+//     });
+//
+//
+//     console.log("Processing started");
+//
+// }
+// function readFile(number,cb) {
+//     setTimeout(function () {
+//         console.log("Reading File");
+//         cb(number);
+//
+//     },0);
+//
+//
+// }
+function organzingParty() {
+    orderPizza(5);
+    orderDrinks(5);
+    Billing();
+    
 }
-function readFile(number,cb) {
+
+function orderPizza(order) {
     setTimeout(function () {
-        console.log("Reading File");
-        cb(number);
+        let output=order*80;
 
     },0);
+    
+}
 
+function orderDrinks(order) {
+    setTimeout(function () {
+        let output=order*60;
 
+    },0);
+    
+}
+
+function Billing() {
+    
 }
